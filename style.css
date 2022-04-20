@@ -1,0 +1,97 @@
+body {
+  border: solid 1px rgb(165, 165, 165);
+  border-radius: 5px;
+  margin: 50px;
+  padding: 50px;
+  box-shadow: grey;
+  min-width: 520px;
+}
+h1 {
+  color: #939aa9;
+}
+.input-group-text {
+  background-color: #939aa9;
+}
+h2 {
+  padding-top: 10px;
+}
+#search-btn {
+  background-color: rgb(184, 184, 184);
+  border-color: rgb(184, 184, 184);
+}
+
+.card {
+  border: solid 2px;
+  height: 200px;
+}
+
+.card-text-main {
+  color: #5b6275;
+  position: relative;
+  bottom: -40px;
+  font-size: 25px;
+}
+.card-text-details {
+  color: #5b6275;
+  position: relative;
+  bottom: -20px;
+}
+.card-text-main-date {
+  color: #5b6275;
+  position: relative;
+  bottom: -20px;
+}
+.card-text {
+  color: #5b6275;
+}
+
+.card-title-imp {
+  font-size: 60px;
+  color: #5b6275;
+}
+
+.card-title {
+  color: #5b6275;
+}
+.unit {
+  color: orange;
+  font-weight: bold;
+}
+.quantity {
+  font-weight: bold;
+  color: #5b6275;
+}
+.card-week {
+  background-color: #fbfbfc;
+  width: 100%;
+
+  border-radius: 5px;
+  text-align: center;
+}
+.row-cols-5 {
+  text-align: center;
+}
+.high-temperature {
+  font-weight: bold;
+}
+#weather {
+  width: 100%;
+  border-color: rgb(255, 217, 0);
+}
+#date {
+  width: 100%;
+  border-color: rgb(39, 63, 204);
+}
+#temperature {
+  width: 100%;
+  border-color: rgb(255, 153, 0);
+}
+#details {
+  width: 100%;
+  border-color: rgb(166, 255, 0);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
