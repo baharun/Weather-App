@@ -95,3 +95,6 @@ ul {
   margin: 0;
   padding: 0;
 }
+#GithubUrl {
+  text-align: center;
+}
