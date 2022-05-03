@@ -1,11 +1,17 @@
-body {
+.app-wrap {
+  max-width: 600px;
+  margin: 50px auto;
+}
+.app {
+  max-width: 600px;
   border: solid 1px rgb(165, 165, 165);
   border-radius: 5px;
-  margin: 50px;
+  margin: 10px auto;
   padding: 50px;
   box-shadow: grey;
   min-width: 520px;
 }
+
 h1 {
   color: #939aa9;
 }
@@ -57,6 +63,10 @@ h2 {
   color: orange;
   font-weight: bold;
 }
+.fahrenheit {
+  color: #5b6275;
+  text-decoration: none;
+}
 .quantity {
   font-weight: bold;
   color: #5b6275;
@@ -90,8 +100,13 @@ h2 {
   width: 100%;
   border-color: rgb(166, 255, 0);
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+#time {
+  color: #5b6275;
+  position: relative;
+  bottom: -40px;
+  font-size: 25px;
+}
+#description {
+  text-transform: capitalize;
 }

@@ -20,8 +20,10 @@ function getTime(date) {
 }
 
 let currentTime = new Date();
+
 let dayElement = document.querySelector("#day");
 dayElement.innerHTML = getDay(currentTime);
+
 let timeElement = document.querySelector("#time");
 timeElement.innerHTML = getTime(currentTime);
 
@@ -38,7 +40,14 @@ function displayWeatherCondition(response) {
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
 
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
