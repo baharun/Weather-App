@@ -12,6 +12,9 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;500;800&family=Montserrat:wght@900&family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -25,11 +28,12 @@
               <div class="col-9">
                 <input
                   type="search"
-                  placeholder="Type a city.."
+                  placeholder="Search for a city ..." 
                   autofocus="on"
                   autocomplete="off"
                   id="city-input"
                   class="form-control shadow-sm"
+                  
                 />
               </div>
               <div class="col-3">
@@ -46,18 +50,18 @@
           <h2 id="city"></h2>
           <div class="row">
             <div class="col-6 mb-4">
-              <div class="card text-center" id="weather">
+              <div class="card" id="weather">
                 <div class="card-body">
-                  <img src="" alt="" width="80px" id="icon" />
+                  <img src="" alt=""  id="icon" />
                   <p class="card-text-main" id="description"></p>
                 </div>
               </div>
             </div>
             <div class="col-6 mb-4">
-              <div class="card text-center">
+              <div class="card" id="weather-box">
                 <div class="card-body">
                   <h5 class="card-title-imp" id="temperature"></h5>
-                  <p class="card-text-main">
+                  <p class="card-text-main" id="temp-unit">
                     <span class="unit"><a href="#" id="celsius" class="active">°C</a> </span>|
                     <a href="#" id="fahrenheit">°F</a>
                   </p>
@@ -65,19 +69,19 @@
               </div>
             </div>
             <div class="col-6">
-              <div class="card text-center">
+              <div class="card "id="date-box">
                 <div class="card-body">
                   <h5 class="card-title-imp" id="day"></h5>
 
-                  <p>Last updeted: <div id="time"></div></p>
+                  <p id="time-update">Last updeted: <div id="time"></div></p>
                   <p></p>
                 </div>
               </div>
             </div>
             <div class="col-6">
-              <div class="card text-center" id="details">
+              <div class="card " id="details">
                 <div class="card-body">
-                  <p class="card-text-details">
+                  <p class="card-text-details" id="details-text">
                     Pressure: <span class="quantity" id="pressure"></span>
                     <br />
 
@@ -90,17 +94,18 @@
               </div>
             </div>
           </div>
-          <br>
+         
+          
  <div class="weather-forecast" id="forecast"></div>
     
         </div>
 
        
-        <p class="GithubUrl">
-          <a href="https://github.com/baharun/Weather-App.git"
-            >Open-source code</a
+        <p class="GithubUrl" id="source-code"> This project was coded by <a href="https://www.linkedin.com/in/baharasl/" id="designer">Bahar</a>  and is 
+          <a href="https://github.com/baharun/Weather-App.git" id="github"
+            >open-sourced on GitHub</a
           >
-          by Bahar
+         
         </p>
       </div>
     </div>

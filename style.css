@@ -1,108 +1,115 @@
+body {
+  font-family: "Assistant", sans-serif;
+  background-image: radial-gradient(
+      ellipse at bottom left,
+      #0d0c3d 0%,
+      #0a1394 10%,
+      #0d0c3d,
+      #0d0c3d,
+      transparent
+    ),
+    radial-gradient(
+      ellipse at right,
+      #fb8400,
+      #0a1394,
+      #0a1394,
+      #0a1394,
+      transparent
+    );
+}
 .app-wrap {
   max-width: 600px;
   margin: 50px auto;
 }
 .app {
+  background-image: linear-gradient(
+    to bottom right,
+    #2b26be,
+    rgb(0, 0, 0),
+    rgb(0, 0, 0)
+  );
   max-width: 600px;
-  border: solid 1px rgb(165, 165, 165);
-  border-radius: 5px;
+  max-height: 900px;
   margin: 10px auto;
   padding: 50px;
-  box-shadow: grey;
+  border: 1px solid;
+  border-color: transparent #2821f8 transparent transparent;
   min-width: 520px;
 }
 
 h1 {
-  color: #939aa9;
+  font-weight: lighter;
+  color: white;
 }
-.input-group-text {
-  background-color: #939aa9;
-}
+
 h2 {
   padding-top: 10px;
+  color: whitesmoke;
+  font-weight: bolder;
 }
+
+#city-input {
+  background: transparent;
+  border-radius: 0;
+  border: 0.5px solid whitesmoke;
+  color: #fb8400;
+}
+
 #search-btn {
-  background-color: rgb(184, 184, 184);
-  border-color: rgb(184, 184, 184);
+  background: linear-gradient(to bottom right, #fb8400, #060e7b 70%);
+  border: none;
+  border-radius: 0;
 }
 
 .card {
-  border: solid 2px;
   height: 200px;
-}
-
-.card-text-main {
-  color: #5b6275;
-  position: relative;
-  bottom: -40px;
-  font-size: 25px;
-}
-.card-text-details {
-  color: #5b6275;
-  position: relative;
-  bottom: -20px;
-}
-.card-text-main-date {
-  color: #5b6275;
-  position: relative;
-  bottom: -20px;
-}
-.card-text {
-  color: #5b6275;
-}
-
-.card-title-imp {
-  font-size: 60px;
-  color: #5b6275;
-}
-
-.card-title {
-  color: #5b6275;
-}
-
-.quantity {
-  font-weight: bold;
-  color: #5b6275;
-}
-.card-week {
-  background-color: #fbfbfc;
-  width: 100%;
-
-  border-radius: 5px;
-  text-align: center;
-}
-.row-cols-5 {
-  text-align: center;
-}
-.high-temperature {
-  font-weight: bold;
+  border: none;
+  color: whitesmoke;
 }
 
 #weather {
   width: 100%;
-  border-color: rgb(255, 217, 0);
+  background: linear-gradient(to bottom right, #0d0c3d, #020050, #fc9900);
+  border-radius: 0;
 }
-#date {
-  width: 100%;
-  border-color: rgb(39, 63, 204);
-}
-#temperature {
-  width: 100%;
-  border-color: rgb(255, 153, 0);
-}
-#details {
-  width: 100%;
-  border-color: rgb(166, 255, 0);
-}
-
-#time {
-  color: #5b6275;
+#icon {
+  width: 120px;
   position: relative;
-
-  font-size: 25px;
+  left: 100px;
 }
 #description {
   text-transform: capitalize;
+  color: whitesmoke;
+  position: relative;
+  top: 30px;
+  font-size: 15px;
+}
+
+#weather-box {
+  width: 100%;
+  background: linear-gradient(
+    240deg,
+    #ee0064,
+    #0d0c3d,
+    #060e7b,
+    #0d0c3d,
+    #0d0c3d
+  );
+  border-radius: 0;
+}
+#temperature {
+  position: relative;
+  font-size: 100px;
+  font-weight: lighter;
+  color: white;
+}
+
+#temp-unit {
+  color: whitesmoke;
+  position: relative;
+  top: 10px;
+  left: 140px;
+  font-size: 25px;
 }
 
 #fahrenheit {
@@ -113,7 +120,98 @@ h2 {
 }
 
 .card-text-main .active {
-  color: red;
+  color: #ee0064;
   cursor: default;
+  text-decoration: none;
+}
+
+#date-box {
+  width: 100%;
+  background: linear-gradient(to bottom left, #0d0c3d, #0d0c3d, #060e7b);
+  border-radius: 0;
+  border: 1px solid;
+  border-color: #fc9900 transparent transparent transparent;
+}
+#day {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  font-size: 50px;
+  color: white;
+}
+
+#time-update {
+  color: rgb(145, 139, 139);
+  position: relative;
+  top: 70px;
+  font-size: 12px;
+}
+#time {
+  color: whitesmoke;
+  position: relative;
+  top: 55px;
+  font-size: 12px;
+}
+
+#details {
+  width: 100%;
+  background: radial-gradient(
+      ellipse at bottom right,
+      #fc9900 0%,
+      #0a1394 10%,
+      #0d0c3d,
+      #0d0c3d,
+      transparent
+    ),
+    radial-gradient(
+      ellipse at left,
+      #0a1394,
+      #0a1394,
+      #0a1394,
+      #ee0064,
+      transparent
+    );
+
+  border-radius: 0;
+}
+#details-text {
+  color: whitesmoke;
+  position: relative;
+  top: 120px;
+  font-size: 12px;
+}
+
+#forecast {
+  margin-top: 50px;
+  background: linear-gradient(
+    to bottom right,
+    #2b26be,
+    #020050,
+    rgb(0, 0, 0),
+    #2b26be
+  );
+  padding: 10px;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
+.weather-forecast-temperature-max {
+  font-weight: 300px;
+}
+.weather-forecast-temperature-min {
+  opacity: 50%;
+}
+
+#source-code {
+  font-size: 10px;
+  color: #ee0064;
+}
+#github {
+  color: whitesmoke;
+  text-decoration: none;
+}
+#designer {
+  color: whitesmoke;
   text-decoration: none;
 }
