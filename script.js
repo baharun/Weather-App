@@ -49,9 +49,11 @@ function displayForecast(response) {
       <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <img
-          src="icon/${response.data.weather[0].icon}.png"
+          src="icon/${forecastDay.weather[0].icon}.png"
           alt=""
-          width="42"
+          width="60"
+          id="forcast-icon"
+    
         />
         <div class="weather-forecast-temperatures">
           <span class="weather-forecast-temperature-max"> ${Math.round(
