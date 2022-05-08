@@ -79,6 +79,11 @@ function getForecast(coordinates) {
 }
 
 function displayWeatherCondition(response) {
+  let fahrenheitLink = document.querySelector("#fahrenheit");
+  let celsiusLink = document.querySelector("#celsius");
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+
   celsiusTemperature = response.data.main.temp;
 
   document.querySelector("#city").innerHTML = response.data.name;
